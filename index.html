@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CalculadoraMD · Presentación</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Montserrat:wght@500;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #080a09; --ink: #f2f6f4; --muted: #9fb2aa; --teal: #7ad6bb; --amber: #ffb547; --card: #111816; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(1200px 700px at 15% 0%, rgba(122,214,187,.16), transparent 60%), radial-gradient(900px 600px at 100% 100%, rgba(255,181,71,.08), transparent 60%), var(--bg);
+    color: var(--ink); font-family: "Montserrat", system-ui, sans-serif; min-height: 100vh; }
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 16px 48px; }
+  .chip { display: inline-block; font-family: "Space Mono", monospace; font-size: 12px; letter-spacing: .14em; color: var(--amber);
+    border: 1.5px solid rgba(255,181,71,.8); border-radius: 999px; padding: 6px 12px; }
+  h1 { font-weight: 900; font-size: clamp(36px, 7vw, 72px); letter-spacing: -.035em; line-height: 1; margin: 14px 0 6px; }
+  h1 em { font-family: "Instrument Serif", serif; font-weight: 400; color: var(--teal); font-size: 1.22em; letter-spacing: 0; margin-left: 4px; }
+  .sub { font-family: "Space Mono", monospace; font-size: 13px; letter-spacing: .12em; color: var(--muted); margin-bottom: 22px; }
+  .player { border-radius: 16px; overflow: hidden; background: #000; box-shadow: 0 24px 70px rgba(0,0,0,.6), 0 0 0 1px rgba(122,214,187,.25); }
+  video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-top: 18px; }
+  .btn { display: inline-block; text-decoration: none; color: #062a22; background: var(--teal); font-weight: 700; padding: 12px 18px; border-radius: 999px; font-size: 15px; }
+  .dur { color: var(--muted); font-size: 14px; }
+  .equipo { margin-top: 30px; background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 20px; }
+  .equipo h2 { font-family: "Space Mono", monospace; font-size: 12px; letter-spacing: .16em; color: var(--amber); margin-bottom: 12px; font-weight: 700; }
+  .equipo ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 20px; }
+  .equipo li { font-weight: 700; font-size: 16px; }
+  .gracias { font-family: "Instrument Serif", serif; font-style: italic; color: var(--teal); font-size: 34px; margin-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <span class="chip">PROYECTO INTEGRADOR · UCEVA 2026</span>
+  <h1>Calculadora<em>MD</em></h1>
+  <p class="sub">PRESENTACIÓN DEL PROYECTO</p>
+  <div class="player">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="row">
+    <span class="dur">16:35 · 720p</span>
+    <a class="btn" href="video.mp4" download="CalculadoraMD - Presentacion.mp4">Descargar video</a>
+  </div>
+  <section class="equipo">
+    <h2>PRESENTADO POR</h2>
+    <ul>
+      <li>Dana Valentina Drada Cuartas</li>
+      <li>Devin Dayan Castaño Jiménez</li>
+      <li>Mariana Ramírez Potes</li>
+      <li>Melisa Adriana Hincapié Millán</li>
+    </ul>
+    <p class="gracias">¡Gracias!</p>
+  </section>
+</main>
+</body>
+</html>
